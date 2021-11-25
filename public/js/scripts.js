@@ -1,7 +1,8 @@
 /*!
-* Start Bootstrap - joice: meet and eat v0.0.1 (undefined)
-* Copyright 2013-2021 Start Bootstrap & joiceapp team
-* Licensed under undefined (https://github.com/StartBootstrap/joiceapp-webiste/blob/master/LICENSE)
+* Start Bootstrap - Copyright 2013-2021 (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
+*/
+/*!
+* Joice Team - Copyright 2021-2021 joiceapp team
 */
 //
 // Scripts
