@@ -1,4 +1,4 @@
-- var titleprefix = "Naa, heute abend schon was vor?"
+- var titleprefix = "Guten Hunger!"
 doctype html
 html(lang='en')
 
@@ -9,7 +9,8 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
             .container.px-5
-                a.navbar-brand.fw-bold(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') 
+                    img(src='assets/img/logo.png' height='52')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.bi-list
