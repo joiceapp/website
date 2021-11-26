@@ -12,18 +12,20 @@ html(lang='en')
                 a.navbar-brand(href='#page-top') 
                     img(src='assets/img/logo.png' height='52')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
+                    | Menü
                     i.bi-list
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.me-4.my-3.my-lg-0
                         li.nav-item
-                            a.nav-link.me-lg-3(href='#features') Features
+                            a.nav-link.me-lg-3(href='#features') Funktionen
                         li.nav-item
-                            a.nav-link.me-lg-3(href='#download') Download
+                            a.nav-link.me-lg-3(href='#download') Herunterladen
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='/imprint.html') Über uns
                     button.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(data-bs-toggle='modal', data-bs-target='#feedbackModal')
                         span.d-flex.align-items-center
                             i.bi-chat-text-fill.me-2
-                            span.small Send Feedback
+                            span.small Kontakt
 
         // Mashead header
         header.masthead
@@ -32,8 +34,8 @@ html(lang='en')
                     .col-lg-6
                         // Mashead text and app badges
                         .mb-5.mb-lg-0.text-center.text-lg-start
-                            h1.display-1.lh-1.mb-3 Showcase your app beautifully.
-                            p.lead.fw-normal.text-muted.mb-5 Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!
+                            h1.display-1.lh-1.mb-3 joice: meet and eat
+                            p.lead.fw-normal.text-muted.mb-5 Keine Lust mehr alleine zu kochen und eine langweiligen Abend zu verbringen? Lade jetzt die joice App!
                             .d-flex.flex-column.flex-lg-row.align-items-center
                                 a.me-lg-3.mb-4.mb-lg-0(href='#!')
                                     img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
@@ -110,17 +112,8 @@ html(lang='en')
                                         // * * 100% like the demo example below.
                                         video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                             source(src='assets/img/demo-screen.mp4', type='video/mp4')
-
-        // Basic features section
-        section.bg-light
-            .container.px-5
-                .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
-                    .col-12.col-lg-5
-                        h2.display-4.lh-1.mb-4 Enter a new age of web design
-                        p.lead.fw-normal.text-muted.mb-5.mb-lg-0 This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.
-                    .col-sm-8.col-md-6
-                        .px-5.px-sm-0
-                            img.img-fluid.rounded-circle(src='https://source.unsplash.com/u8Jn2rzYIps/900x900', alt='...')
+                                            
+        include includes/feature-description
 
         // Call to action section
         section.cta
