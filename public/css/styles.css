@@ -5,6 +5,12 @@
 /*!
 * Joice Team - Copyright 2021-2021 joiceapp team
 */
+@font-face {
+  font-family: joiceapp;
+  src: url("../font/News 701 Italic BT.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11547,13 +11553,18 @@ footer .heart {
 footer .footer-headline {
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 .masthead {
   background-color: #f8f9fa;
   padding-top: 9.5rem;
   padding-bottom: 5rem;
+}
+.masthead h1, .masthead .h1 {
+  font-family: "joiceapp";
+  font-style: italic;
+  font-weight: bold;
 }
 .masthead .masthead-device-mockup {
   display: flex;

@@ -45,6 +45,16 @@ sans-serif,
 "Segoe UI Symbol",
 "Noto Color Emoji";
 
+//joiceapp font
+@font-face {
+    font-family: joiceapp;
+    src: url("../font/News 701 Italic BT.ttf");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+
+
 // Override default Bootstrap font weights
 
 $font-weight-normal: 500;
