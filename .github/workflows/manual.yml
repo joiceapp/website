@@ -10,9 +10,9 @@ jobs:
       - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
-          username: ${{ secrets.user }}
-          server: ${{ secrets.server }}
-          ssh_private_key: ${{ secrets.key }} 
+          username: ${{ secrets.USER }}
+          server: ${{ secrets.SERVER }}
+          ssh_private_key: ${{ secrets.KEY }} 
           local_path: './public/*'
           remote_path: '/var/www/other/joiceapp/www/public'
           args: '-o ConnectTimeout=5'
