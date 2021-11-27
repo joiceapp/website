@@ -11323,10 +11323,6 @@ section {
   padding-bottom: 5rem;
 }
 
-.app-badge {
-  height: 3rem;
-}
-
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -11421,6 +11417,12 @@ section {
   left: 0%;
   width: 100%;
   height: 100%;
+}
+
+.app-badge {
+  height: 3rem;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 section.legal .table-of-content a {

@@ -1,0 +1,9 @@
+// Set fixed height for app badges
+
+.app-badge {
+    height: 3rem;
+
+    //disabled
+    opacity: 0.5;
+    cursor: not-allowed;
+}
