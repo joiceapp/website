@@ -11561,6 +11561,10 @@ footer a:hover, footer a:active, footer a:focus {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: underline;
 }
+footer a.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
 footer hr {
   background-color: rgba(255, 255, 255, 0.5);
 }

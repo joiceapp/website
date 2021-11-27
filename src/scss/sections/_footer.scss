@@ -3,6 +3,7 @@
 // 
 footer {
     a {
+
         color: fade-out($white, 0.5);
         text-decoration: none;
 
@@ -13,6 +14,11 @@ footer {
             text-decoration: underline;
         }
     }
+    a.disabled {
+        pointer-events: none;
+        cursor: not-allowed; 
+    }
+
     hr {
         background-color: fade-out($white, 0.5);;
     }
