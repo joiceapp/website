@@ -27,35 +27,7 @@ html(lang='de')
                             i.bi.bi-instagram.me-2
                             span.small Instagram
 
-        // Mashead header
-        header.masthead
-            .container.px-5
-                .row.gx-5.align-items-center
-                    .col-lg-6
-                        // Mashead text and app badges
-                        .mb-5.mb-lg-0.text-center.text-lg-start
-                            h1.display-1.lh-1.mb-3 joice: meet and eat
-                            p.lead.fw-normal.text-muted.mb-5 Keine Lust mehr alleine zu kochen und eine langweiligen Abend zu verbringen? Bald ist die joice App verfügbar.
-                            .d-flex.flex-column.flex-lg-row.align-items-center
-                                a.me-lg-3.mb-4.mb-lg-0(href='#!')
-                                    img.app-badge(src='assets/img/google-play-badge.svg', alt='Link to Playstore')
-                                a(href='#!')
-                                    img.app-badge(src='assets/img/app-store-badge.svg', alt='Link to App Store')
-                    .col-lg-6
-                        // Masthead device mockup feature
-                        .masthead-device-mockup
-                            include includes/app-elements/gradient-circle
-                            include includes/app-elements/shape-1
-                            include includes/app-elements/shape-2
-                            .device-wrapper
-                                .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
-                                    .screen.bg-black
-                                        // PUT CONTENTS HERE:
-                                        // * * This can be a video, image, or just about anything else.
-                                        // * * Set the max width of your media to 100% and the height to
-                                        // * * 100% like the demo example below.
-                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
-                                            source(src='assets/img/demo-screen.mp4', type='video/mp4')
+        include includes/app-elements/mashead
 
         include includes/app-elements/quote
 
@@ -100,12 +72,8 @@ html(lang='de')
                             .device-wrapper
                                 .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                                     .screen.bg-black
-                                        // PUT CONTENTS HERE:
-                                        // * * This can be a video, image, or just about anything else.
-                                        // * * Set the max width of your media to 100% and the height to
-                                        // * * 100% like the demo example below.
-                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
-                                            source(src='assets/img/demo-screen.mp4', type='video/mp4')
+                                        video(muted='muted', autoplay='', loop='', style='width:100%; height: 100%; object-fit: cover; object-position: 50%')
+                                            source(src='assets/img/sheep_2.mp4', type='video/mp4')
                                             
         include includes/app-elements/feature-description
 

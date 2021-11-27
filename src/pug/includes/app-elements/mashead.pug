@@ -1,0 +1,29 @@
+// Mashead header
+header.masthead
+    .container.px-5
+        .row.gx-5.align-items-center
+            .col-lg-6
+                // Mashead text and app badges
+                .mb-5.mb-lg-0.text-center.text-lg-start
+                    h1.display-1.lh-1.mb-3 joice:
+                        br
+                        | meet and eat
+                    p.lead.fw-normal.text-muted.mb-5 Keine Lust mehr alleine zu kochen und einen langweiligen Abend zu verbringen?
+                        br
+                        | Auch das Lamm muss noch auf unsere App warten.
+                    .d-flex.flex-column.flex-lg-row.align-items-center
+                        a.me-lg-3.mb-4.mb-lg-0(href='#!')
+                            img.app-badge(src='assets/img/google-play-badge.svg', alt='Link to Playstore')
+                        a(href='#!')
+                            img.app-badge(src='assets/img/app-store-badge.svg', alt='Link to App Store')
+            .col-lg-6
+                // Masthead device mockup feature
+                .masthead-device-mockup
+                    include gradient-circle
+                    include shape-1
+                    include shape-2
+                    .device-wrapper
+                        .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                            .screen.bg-black
+                                video(muted='muted', autoplay='', loop='', style='width:100%; height: 100%; object-fit: cover; object-position: 50%')
+                                    source(src='assets/img/sheep_2.mp4', type='video/mp4')

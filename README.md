@@ -1,5 +1,8 @@
 # joiceapp.com official website
 
+## Special thanks to
+Start Bootstrap https://startbootstrap.com/theme/new-age
+
 ## Scripts
 - npm run build - build js, scss, pug assets
 - npm run start - start on localhost
