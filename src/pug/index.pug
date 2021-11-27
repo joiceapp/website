@@ -57,13 +57,7 @@ html(lang='de')
                                         video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                             source(src='assets/img/demo-screen.mp4', type='video/mp4')
 
-        // Quote/testimonial aside
-        aside.text-center.bg-gradient-primary-to-secondary
-            .container.px-5
-                .row.gx-5.justify-content-center
-                    .col-xl-8
-                        .h2.fs-1.text-white.mb-4 "An intuitive solution to a common problem that we all face, wrapped up in a single app!"
-                        img(src='assets/img/tnw-logo.svg', alt='...', style='height: 3rem;')
+        include includes/quote
 
         // App features section
         section#features
