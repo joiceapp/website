@@ -9,8 +9,8 @@ html(lang='de')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
             .container.px-5
-                a.navbar-brand(href='#page-top') 
-                    img(src='assets/img/logo.png' height='52')
+                a.navbar-brand(href='/index.html') 
+                    img(src='/assets/img/logo.png' height='52')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menü
                     i.bi-list
@@ -43,63 +43,20 @@ html(lang='de')
                 .table-of-content#content-table 
                     a.btn.btn-outline-primary(href='#imprint') Impressum
                     a.btn.btn-outline-primary(href='#tos') Datenschutzerklärung
-                    a.btn.btn-outline-primary(href='#tos') Allgemeine Nutzungsbedingungen
-                    a.btn.btn-outline-primary(href='#tos') Bildnachweise
-                    a.btn.btn-outline-primary(href='#tos') Hinweis zu Cookies
-                    a.btn.btn-outline-primary(href='#tos') Hinweis zu 3rd-Party Software
-                section#imprint.text
-                    h2 Impressum
-                    h4 Angaben gem&auml;&szlig; &sect; 5 TMG
-                    p 
-                        strong joiceapp Adshead Fette L&uuml;&szlig;mann Sch&auml;fer Tallowitz GbR
-                        br
-                        | c/o Fette/Sch&auml;fer
-                        br
-                        | Gebbertstr. 61
-                        br
-                        | 91052 Erlangen
-                    p
-                        strong Vertreten durch:
-                        br
-                        | Jonathan Adshead
-                        br
-                        | Marvin Fette
-                        br
-                        | Thomas L&uuml;&szlig;mann
-                        br
-                        |Anne Sch&auml;fer
-                        br
-                        | Yannes Tallowitz
+                    a.btn.btn-outline-primary(href='#agb') Allgemeine Nutzungsbedingungen
+                    a.btn.btn-outline-primary(href='#pic') Bildnachweise
+                    a.btn.btn-outline-primary(href='#3rd') Hinweis zu 3rd-Party Software
+                
+                include includes/about-us/imprint
 
-                    p#contact
-                        strong Kontakt:
-                        br
-                        | Telefon: +49 (160) 9521-2401
-                        br
-                        | E-Mail:
-                        a(href='mailto:contact@joiceapp.com') contact@joiceapp.com
+                include includes/about-us/tos
 
-                    p
-                        strong Mit dem Datenschutz beauftragte Person:
-                        br
-                        | Yannes Tallowitz
-                        br
-                        | E-Mail:
-                        a(href='mailto:contact@joiceapp.com') contact@joiceapp.com
+                include includes/about-us/agb
+                
+                include includes/about-us/pic-disclamer
 
-                    h4 Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
-                    p Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
-
-                    p
-                        | Quelle:
-                        a(href='https://www.e-recht24.de', target='_blank') e-recht24.de
-
-                section#tos.text
-                    h2 Datenschutzerklärung
-                section#agb.text
-                    h2 Allgemeine Nutzungsbedingungen
-                section#pic.text
-                    h2 Bildnachweise
+                include includes/about-us/3rd-party
+                
 
         include includes/download
 
