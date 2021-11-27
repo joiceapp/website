@@ -2,7 +2,7 @@
 doctype html
 html(lang='de')
 
-    include includes/head
+    include includes/core-elements/head
 
     body#page-top
 
@@ -44,9 +44,9 @@ html(lang='de')
                     .col-lg-6
                         // Masthead device mockup feature
                         .masthead-device-mockup
-                            include includes/gradient-circle
-                            include includes/shape-1
-                            include includes/shape-2
+                            include includes/app-elements/gradient-circle
+                            include includes/app-elements/shape-1
+                            include includes/app-elements/shape-2
                             .device-wrapper
                                 .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                                     .screen.bg-black
@@ -57,7 +57,7 @@ html(lang='de')
                                         video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                             source(src='assets/img/demo-screen.mp4', type='video/mp4')
 
-        include includes/quote
+        include includes/app-elements/quote
 
         // App features section
         section#features
@@ -94,9 +94,9 @@ html(lang='de')
                     .col-lg-4.order-lg-0
                         // Features section device mockup
                         .features-device-mockup
-                            include includes/gradient-circle
-                            include includes/shape-1
-                            include includes/shape-2
+                            include includes/app-elements/gradient-circle
+                            include includes/app-elements/shape-1
+                            include includes/app-elements/shape-2
                             .device-wrapper
                                 .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                                     .screen.bg-black
@@ -107,10 +107,10 @@ html(lang='de')
                                         video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
                                             source(src='assets/img/demo-screen.mp4', type='video/mp4')
                                             
-        include includes/feature-description
+        include includes/app-elements/feature-description
 
-        include includes/download
+        include includes/app-elements/download
 
-        include includes/footer
+        include includes/core-elements/footer
 
-        include includes/cookie
+        include includes/core-elements/cookie
