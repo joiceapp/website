@@ -4,6 +4,14 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    //Cookie banner
+    const ckButton = document.body.querySelector('#ck-dismiss');
+    const ckBanner = document.body.querySelector('#cookie-card');
+
+    ckButton.addEventListener('click', event => {
+        ckBanner.hidden = true;
+    });
+
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
@@ -27,3 +35,4 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+

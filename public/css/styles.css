@@ -11353,6 +11353,17 @@ section {
   color: #f5365c;
 }
 
+#cookie-card {
+  position: fixed;
+  display: block;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+#cookie-card .cookie-icon {
+  font-size: 1.2rem;
+}
+
 /*!
  * html5-device-mockups (https://github.com/pixelsign/html5-device-mockups)
  * Copyright 2013 - 2017 pixelsign
