@@ -1,0 +1,18 @@
+on: [push]
+
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: ${{ secrets.user }}
+          server: ${{ secrets.server }}
+          ssh_private_key: ${{ secrets.key }} 
+          local_path: './public/*'
+          remote_path: '/var/www/other/joiceapp/www/public'
+          args: '-o ConnectTimeout=5'
