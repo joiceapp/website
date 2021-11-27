@@ -1,6 +1,6 @@
 - var titleprefix = "Über uns"
 doctype html
-html(lang='en')
+html(lang='de')
 
     include includes/head
 
@@ -22,10 +22,10 @@ html(lang='en')
                             a.nav-link.me-lg-3(href='/index.html#download') Herunterladen
                         li.nav-item
                             a.nav-link.me-lg-3(href='/imprint.html') Über uns
-                    button.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(data-bs-toggle='modal', data-bs-target='#feedbackModal')
+                    a.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(href='https://www.instagram.com/', target='_blank')
                         span.d-flex.align-items-center
-                            i.bi-chat-text-fill.me-2
-                            span.small Kontakt
+                            i.bi.bi-instagram.me-2
+                            span.small Instagram
 
         // Call to action section
         section.cta
@@ -71,7 +71,7 @@ html(lang='en')
                         br
                         | Yannes Tallowitz
 
-                    p
+                    p#contact
                         strong Kontakt:
                         br
                         | Telefon: +49 (160) 9521-2401
