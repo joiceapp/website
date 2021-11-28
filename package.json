@@ -3,7 +3,7 @@
     "title": "joice: meet and eat",
     "name": "joiceapp-webiste",
     "version": "0.0.1",
-    "description": "A landingpage about.",
+    "description": "A landingpage about the joiceapp.",
     "homepage": "https://www.joiceapp.com/",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
