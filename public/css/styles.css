@@ -11352,9 +11352,10 @@ section {
 #cookie-card {
   position: fixed;
   display: block;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 0;
+  right: 0;
   z-index: 100;
+  margin: 1.5rem;
 }
 #cookie-card .cookie-icon {
   font-size: 1.2rem;
