@@ -5,17 +5,18 @@ header.masthead
             .col-lg-6
                 // Mashead text and app badges
                 .mb-5.mb-lg-0.text-center.text-lg-start
-                    h1.display-1.lh-1.mb-3 joice:
+                    h1.display-1.lh-1.mb-3.headline joice:
                         br
                         | meet and eat
                     p.lead.fw-normal.text-muted.mb-5 Keine Lust mehr alleine zu kochen und einen langweiligen Abend zu verbringen?
                         br
-                        | Unsere App befindet sich noch in der Entwicklung! &mdash; Auch das Lamm muss noch auf unsere App warten.
+                        br
+                        | Unsere App befindet sich noch in der Entwicklung!
                     .d-flex.flex-column.flex-lg-row.align-items-center
                         a.me-lg-3.mb-4.mb-lg-0(href='#!')
-                            img.app-badge(src='assets/img/google-play-badge.svg', alt='Link to Playstore')
+                            img.app-badge(src='assets/img/google-play-badge.svg', alt='Link to Playstore' title='Noch nicht verfügbar!')
                         a(href='#!')
-                            img.app-badge(src='assets/img/app-store-badge.svg', alt='Link to App Store')
+                            img.app-badge(src='assets/img/app-store-badge.svg', alt='Link to App Store' title='Noch nicht verfügbar!')
             .col-lg-6
                 // Masthead device mockup feature
                 .masthead-device-mockup
@@ -25,5 +26,8 @@ header.masthead
                     .device-wrapper
                         .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
                             .screen.bg-black
-                                video(muted='muted', autoplay='', loop='', style='width:100%; height: 100%; object-fit: cover; object-position: 50%')
-                                    source(src='assets/img/sheep_2.mp4', type='video/mp4')
+                                h1.device-text.font-alt.h1.text-white Coming
+                                    br
+                                    | soon
+                                    span.dots |
+                                img(src='assets/img/pexels-adonyi-gábor-1414651.jpg', style='width:100%; height: 100%; object-fit: cover; object-position: 55%')

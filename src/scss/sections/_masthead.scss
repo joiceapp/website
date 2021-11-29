@@ -8,7 +8,26 @@
     padding-top: 5rem + 4.5rem;
     padding-bottom: 5rem;
 
-    h1 {
+    .device-text {
+        position: absolute;
+        left: 1rem;
+        top: 40%;
+        font-style: normal;
+        font-weight: bold !important;
+        
+        .dots {
+            animation: blink 0.8s infinite;
+            font-weight: normal;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    }
+
+    h1.headline {
         //font-family: "joiceapp";
         font-style: italic;
         font-weight: bold;

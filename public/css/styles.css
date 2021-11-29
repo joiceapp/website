@@ -11583,7 +11583,29 @@ footer .footer-headline {
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
-.masthead h1, .masthead .h1 {
+.masthead .device-text {
+  position: absolute;
+  left: 1rem;
+  top: 40%;
+  font-style: normal;
+  font-weight: bold !important;
+}
+.masthead .device-text .dots {
+  -webkit-animation: blink 0.8s infinite;
+          animation: blink 0.8s infinite;
+  font-weight: normal;
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.masthead h1.headline, .masthead .headline.h1 {
   font-style: italic;
   font-weight: bold;
 }
