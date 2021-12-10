@@ -14,23 +14,31 @@ jobs:
         node-version: 14
      - run: npm install
      - run: npm build
-      with:
-        name: public-art
-        path: public/
+
+     - name: Build publics
+       uses: actions/upload-artifact@v2
+       with:
+         name: public-artifact
+         path: public
   deploy_job:
     runs-on: ubuntu-latest
     name: deploy
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Assets to upload
+        uses: actions/download-artifact@v2
+        with:
+         name: public-artifact
+         path: public
+
       - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
-          name: public-art
-          path: public/
           username: ${{ secrets.USER }}
           server: ${{ secrets.SERVER }}
           ssh_private_key: ${{ secrets.KEY }} 
           local_path: './public/*'
-          remote_path: '/var/www/other/joiceapp/www/public'
+          remote_path: '/var/www/other/${{ secrets.USER }}/www/public'
           args: '-o ConnectTimeout=5'
