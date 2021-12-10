@@ -12,8 +12,8 @@ jobs:
        uses: actions/setup-node@v2
        with:
         node-version: 14
-     - run: npm install
-     - run: npm build
+     - run: npm i
+     - run: npm run build
 
      - name: Build publics
        uses: actions/upload-artifact@v2
