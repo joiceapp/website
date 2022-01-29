@@ -10,21 +10,13 @@
 
     .device-text {
         position: absolute;
-        left: 1rem;
-        top: 40%;
+        left: 0.1rem;
+        top: 20%;
         font-style: normal;
+        font-size: smaller;
         font-weight: bold !important;
-        
-        .dots {
-            animation: blink 0.8s infinite;
-            font-weight: normal;
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
     }
 
     h1.headline {

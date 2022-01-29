@@ -15,6 +15,17 @@
     justify-content: center;
     position: relative;
 
+    .device-text {
+        position: absolute;
+        left: 0.1rem;
+        top: 20%;
+        font-style: normal;
+        font-size: smaller;
+        font-weight: bold !important;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+    }
+
     // SVG that sits behind the phone mockup
     .circle {
         position: absolute;
