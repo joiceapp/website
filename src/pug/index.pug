@@ -1,4 +1,4 @@
-- var titleprefix = "Coming soon"
+- var titleprefix = "Early Access verfügbar"
 doctype html
 html(lang='de')
 
@@ -19,10 +19,12 @@ html(lang='de')
                         li.nav-item
                             a.nav-link.me-lg-3(href='#features') Funktionen
                         li.nav-item
-                            a.nav-link.me-lg-3(href='#download') Herunterladen
+                            a.nav-link.me-lg-3(href='#earlyaccess') Early Access
+                        li.nav-item
+                            a.nav-link.me-lg-3(href='#stores') App Stores
                         li.nav-item
                             a.nav-link.me-lg-3(href='/about_us.html') Über uns
-                    a.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(href='https://www.instagram.com/joiceapp/', target='_blank')
+                    a.btn.btn-outline-dark.rounded-pill.px-3.mb-2.mb-lg-0(href='https://www.instagram.com/joiceapp/', target='_blank')
                         span.d-flex.align-items-center
                             i.bi.bi-instagram.me-2
                             span.small Instagram
@@ -33,9 +35,9 @@ html(lang='de')
 
         include includes/app-elements/feature-set
                                             
-        include includes/app-elements/feature-description
+        include includes/app-elements/early-access
 
-        include includes/app-elements/download
+        include includes/app-elements/stores
         
         include includes/core-elements/footer
 
