@@ -4,18 +4,20 @@ html(lang='de')
 
     include includes/core-elements/head
 
-    body#page-top
+    body#about
 
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
             .container.px-5
-                a.navbar-brand(href='#page-top') 
+                a.navbar-brand(href='/') 
                     img(src='/assets/img/logo.jpg' height='52')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Menü einklappen')
                     | Menü
                     i.bi-list
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.me-4.my-3.my-lg-0
+                        .nav-item
+                            a.nav-link.me-lg-3(href='/') Start
                         li.nav-item
                             a.nav-link.me-lg-3(href='/#features') Funktionen
                         li.nav-item
@@ -23,7 +25,7 @@ html(lang='de')
                         li.nav-item
                             a.nav-link.me-lg-3(href='/#stores') App Stores
                         li.nav-item
-                            a.nav-link.me-lg-3(href='/about_us.html') Über uns
+                            a.nav-link.me-lg-3(href='/about_us.html#about') Über uns
                     a.btn.btn-outline-dark.rounded-pill.px-3.mb-2.mb-lg-0(href='https://www.instagram.com/joiceapp/', target='_blank')
                         span.d-flex.align-items-center
                             i.bi.bi-instagram.me-2
