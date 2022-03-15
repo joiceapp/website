@@ -4,7 +4,11 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
-    //Cookie banner
+    // We have done it
+    const doneModal = new bootstrap.Modal(document.getElementById('weHaveDoneIt'))
+    doneModal.show()
+    
+    // Cookie banner
     const ckButton = document.body.querySelector('#ck-dismiss');
     const ckBanner = document.body.querySelector('#cookie-card');
 
